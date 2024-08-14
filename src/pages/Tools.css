@@ -1,0 +1,27 @@
+img.tool-image{
+    height:200px;
+    width: 200px;
+}
+
+.container{
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.tool-card{
+    border:1px solid;
+    display: inline-block;
+    width: 350px;
+    margin: 10px;
+    box-sizing: border-box;
+    background-color:bisque;
+    border-radius: 10px;
+    height: 450px;
+    padding-left: 50px;
+
+  
+}
