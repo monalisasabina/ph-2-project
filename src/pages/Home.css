@@ -1,0 +1,65 @@
+/* Home page........................................................................ */
+p{
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+  /* h1 served on all pages */
+h1{
+    text-align: center;
+    background: linear-gradient(to bottom, darkgreen, white);
+    height: 60px;
+}
+
+img#home-image{
+    display: block;
+    margin: auto;
+}
+
+h2{
+    margin-left: 10px;
+}
+
+h3#home{
+    margin-left: 10px;
+    text-decoration:underline;
+}
+
+p#warning{
+    background-color:sandybrown ;
+    height:70px;
+    font-size: 20px;
+}
+
+
+
+/* login page......................................................................... */
+
+button{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+label{
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+img#login{
+    height: 150px;
+    width: 250px;
+    display: block;
+}
+
+#password{
+    text-align: center;
+    margin: 100px auto;
+    width: 300px; 
+}
+
+input.input-password{
+    height: 30px;
+    width: 200px;
+    margin-top: 10px;
+    border-radius: 15px;
+}

@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react"
 import "./Tools.css"
+import Form from "../components/Form"
+import ToolCard from "../components/ToolsCard"
 
 
 function Tools(){
@@ -17,24 +19,36 @@ function Tools(){
        
    },[])
 
+   // handle delete...............................................................
+   function handleDeleteTool(deletedTool){
+
+        const updatedTools=tools.filter((tool) =>tool.id !==deletedTool.id)
+        setTools(updatedTools)
+
+   }
+
 
     return(
         <>
-          <div className="container">
-          {tools.map((tool) =>(
-            <div className="tool-card" key={tool.id}>
-                <h3>{tool.name}</h3>
-                <img className="tool-image" src={tool.imageURL}/>
-                <p>TOTAL NUMBER OF TOOLS: {tool.totalNumber}</p>
-                <p>TOOLS AVAILABLE:{tool.availableNumber}</p>
-                <button className="status">TOOL RETURNED</button>
-                <button className="status">TOOL TAKEN</button>
-                <button id="delete">DELETE TOOL</button>
+        <h1>TOOLS SECTION</h1>
+        <div className="tool-container">
+   
+            <Form tools={tools}/>
+ 
+            {tools.map((tool)=>(
+               <ToolCard
+                     key={tool.id} 
+                     tool={tool} 
+                     id={tool.id}
+                     name={tool.name} 
+                     image={tool.imageURL}
+                     totalNumber={tool.totalNumber}
+                     availableNumber={tool.availableNumber}
+                     onDeleteTool={handleDeleteTool}/>
+            ))}
 
-            </div>
-          ))}
           </div>
         </>
-    )
+     )
 }
 export default Tools

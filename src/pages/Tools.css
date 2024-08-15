@@ -1,27 +1,52 @@
 img.tool-image{
     height:200px;
     width: 200px;
+    display: block;
+    margin: auto;
+}
+
+.tool-container{
+  display: flex;
+  flex-wrap: wrap;
+
 }
 
 .container{
-
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  padding: 20px;
+  gap: 20px;
 }
-
 
 .tool-card{
-    border:1px solid;
-    display: inline-block;
-    width: 350px;
-    margin: 10px;
-    box-sizing: border-box;
-    background-color:bisque;
-    border-radius: 10px;
-    height: 450px;
-    padding-left: 50px;
-
-  
+  border:1px solid;
+  width: 450px;
+  box-sizing: border-box;
+  background-color:azure;
+  border-radius: 10px;
+  height: 500px;
+  margin: 10px;
 }
+
+
+p.tools{
+  font-size: 18px;
+}
+
+h3#card{
+  font-size: 20px;
+  text-align: center;
+ 
+}
+
+
+button.status{
+  display:inline-flex;
+  flex-direction: row;
+}
+
+.link{
+  display: block;
+  margin-top: 30px;
+  margin-left: 10px;
+}  

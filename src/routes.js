@@ -3,7 +3,7 @@ import Tools from "./pages/Tools";
 import Login from "./pages/Login";
 import ErrorPage from "./pages/ErrorPage";
 import App from "./App"
-
+import Description from "./pages/Description";
 const routes = [
   {
     path: "/",
@@ -21,7 +21,12 @@ const routes = [
         {
             path: "/login",
             element: <Login />
+        },
+        {
+            path: "/description/:id",
+            element: <Description/>
         }
+       
        
     ]
 }

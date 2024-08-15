@@ -5,7 +5,7 @@ import "./NavBar.css";
 function NavBar() {
   return (
     <nav>
-    <NavLink to="/" className="nav-link"> <img src={logo} alt={"Panthera Africa"} className="nav-logo"/> </NavLink>
+      <NavLink to="/" className="nav-link"> <img src={logo} alt={"Panthera Africa"} className="nav-logo"/> </NavLink>
 
       <NavLink to="/" className="nav-link">Home </NavLink>
 
