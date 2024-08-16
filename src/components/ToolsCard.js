@@ -13,7 +13,7 @@ function ToolCard({name,image,totalNumber,availableNumber,id,tool,onDeleteTool})
         // The number should not go beyond total number
         return setAvailNumber((availNumber) => 
           availNumber<totalNumber ? availNumber + 1 : availNumber
-    )
+      )
         
     }
 
@@ -67,7 +67,6 @@ function ToolCard({name,image,totalNumber,availableNumber,id,tool,onDeleteTool})
 
             <button onClick={handleClickAdd} className="status">TOOL RETURNED</button>
             <button onClick={handleClickMinus}className="status">TOOL TAKEN</button>
-
             <button onClick={handleDeleteToolClick} className="status" id="delete">DELETE TOOL</button>
 
             <Link className="link" to={`/description/${id}`}>View More Details</Link>

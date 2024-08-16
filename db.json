@@ -119,6 +119,17 @@
       "imageURL": "https://5.imimg.com/data5/SELLER/Default/2023/9/346055280/FA/JA/KN/130300505/stanley-fmht13126-0-fatmax-8-adjustable-wrench-500x500.webp",
       "availableNumber": 15,
       "totalNumber": 20
+    },
+    {
+      "id": "28fb",
+      "name": "combination spanners",
+      "brand": "TOTAL",
+      "model": "TOT102286",
+      "price": "1998",
+      "description": "N/A",
+      "imageURL": "https://skywave.co.ke/wp-content/uploads/2023/04/TOTAL-Combination-spanner-set-THT102286.jpg",
+      "availableNumber": "10",
+      "totalNumber": "10"
     }
   ]
 }

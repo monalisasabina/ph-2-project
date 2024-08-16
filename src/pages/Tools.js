@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import "./Tools.css"
 import Form from "../components/Form"
 import ToolCard from "../components/ToolsCard"
+import React from "react"
 
 
 function Tools(){
@@ -27,26 +28,33 @@ function Tools(){
 
    }
 
+   // handling submit.....................................................
+    function handleToolFormSubmit(newTool) {
+    setTools([...tools, newTool]);
+  }
+
+
 
     return(
         <>
         <h1>TOOLS SECTION</h1>
         <div className="tool-container">
-   
-            <Form tools={tools}/>
+
+           <Form onAddTool={handleToolFormSubmit}/> 
  
-            {tools.map((tool)=>(
-               <ToolCard
-                     key={tool.id} 
+           {tools.map((tool)=>(
+      
+                <ToolCard
+                     key={tool.id}
                      tool={tool} 
                      id={tool.id}
                      name={tool.name} 
                      image={tool.imageURL}
                      totalNumber={tool.totalNumber}
                      availableNumber={tool.availableNumber}
-                     onDeleteTool={handleDeleteTool}/>
+                     onDeleteTool={handleDeleteTool}
+                     />
             ))}
-
           </div>
         </>
      )

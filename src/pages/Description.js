@@ -30,8 +30,8 @@ function Description(){
             <p className="para"><strong>BRAND: </strong>{tool.brand}</p>
             <p className="para"><strong>MODEL: </strong>{tool.model}</p>
             <p className="para"><strong>BRAND: </strong>{tool.price}</p>
+            <p className="para"><strong>TOTAL NUMBER OF TOOLS: </strong>{tool.totalNumber}</p>
            
-
          </div>
         </>
     )
