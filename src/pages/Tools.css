@@ -5,19 +5,6 @@ img.tool-image{
     margin: auto;
 }
 
-.tool-container{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-
-}
-
-.container{
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-  gap: 20px;
-}
 
 .tool-card{
   border:1px solid;
@@ -25,14 +12,30 @@ img.tool-image{
   box-sizing: border-box;
   background-color:azure;
   border-radius: 10px;
-  height: 500px;
-  margin: 10px;
+  height: 620px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+
+}
+
+.tool-container{
+  display:flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap:60px
+}
+
+.tool-card-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
 }
 
 
 p.tools{
   font-size: 18px;
 }
+
 
 h3#card{
   font-size: 20px;
@@ -51,3 +54,34 @@ button.status{
   margin-top: 30px;
   margin-left: 10px;
 }  
+
+/* Search................................................................... */
+.searchbar{
+  width: 700px;
+  height: 35px;
+}
+
+.search-form{
+  margin-left: 50px;
+  background-color: gainsboro;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+/* toolUser ......................................................................*/
+#toolUser-title{
+    text-decoration: underline;
+}
+
+li{
+  display: flex;
+  flex-direction: column;
+}
+
+#userlist{
+  max-height: 100px; /* Set the max height to control the list size */
+  overflow-y: auto;  /* Makes the content scrollable if it overflows */
+  margin-top: 10px;
+  border-top: 1px solid #ddd;
+  padding-top: 2px;
+}

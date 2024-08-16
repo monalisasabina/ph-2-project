@@ -126,6 +126,8 @@ function Form({onAddTool}){
                <button id="button-form" type="submit">SUBMIT</button>
 
             </form>
+
+            
         </div>
     )
 }

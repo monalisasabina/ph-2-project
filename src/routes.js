@@ -4,6 +4,7 @@ import Login from "./pages/Login";
 import ErrorPage from "./pages/ErrorPage";
 import App from "./App"
 import Description from "./pages/Description";
+import Form from "./components/Form";
 const routes = [
   {
     path: "/",

@@ -20,18 +20,18 @@ function Description(){
 
     return(
         <>
-         <h1>DESCRIPTION</h1>
+         <h1>ABOUT TOOL</h1>
 
          <div>
             <h2 id="des-title">{tool.name}</h2>
             <img id="des-image"src={tool.imageURL}/>
-            <h4>Description:</h4>
-            <p className="para">{tool.description}</p>
-            <p className="para"><strong>BRAND: </strong>{tool.brand}</p>
-            <p className="para"><strong>MODEL: </strong>{tool.model}</p>
-            <p className="para"><strong>BRAND: </strong>{tool.price}</p>
-            <p className="para"><strong>TOTAL NUMBER OF TOOLS: </strong>{tool.totalNumber}</p>
-           
+            <div className="des-para"> 
+              <p className="para"><strong>DESCRIPTION: </strong>{tool.description}</p>
+              <p className="para"><strong>BRAND: </strong>{tool.brand}</p>
+              <p className="para"><strong>MODEL: </strong>{tool.model}</p>
+              <p className="para"><strong>PRICE: </strong>{tool.price}</p>
+              <p className="para"><strong>TOTAL NUMBER OF TOOLS: </strong>{tool.totalNumber}</p>
+            </div>
          </div>
         </>
     )

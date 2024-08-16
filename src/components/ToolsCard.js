@@ -4,17 +4,22 @@ import { Link } from "react-router-dom"
 function ToolCard({name,image,totalNumber,availableNumber,id,tool,onDeleteTool}){
 
     const[availNumber,setAvailNumber]=useState(availableNumber)
+    const[toolUsers, setToolUsers]=useState([])
 
 
     // Adding availableNumber.......................................................
     function handleClickAdd(){
         console.log("added")
+
+        const userName=window.prompt('Enter the person who has returned the tool')
+
+        if(userName){ 
+
+          setToolUsers((toolUsers)=> toolUsers.filter((toolUser) => toolUser !== userName))
+
+          // The number should not go beyond total number
+          setAvailNumber((availNumber) => availNumber<totalNumber ? availNumber + 1 : availNumber)}
          
-        // The number should not go beyond total number
-        return setAvailNumber((availNumber) => 
-          availNumber<totalNumber ? availNumber + 1 : availNumber
-      )
-        
     }
 
     
@@ -23,11 +28,15 @@ function ToolCard({name,image,totalNumber,availableNumber,id,tool,onDeleteTool})
 
        console.log('subtracted')
 
-       //The number should not subtract beyond zero  
-       return setAvailNumber((availNumber) =>
-             availNumber>0 ? availNumber -1 : availNumber
-        
-       )
+       const userName=window.prompt('Enter the name of the tool user')
+
+       if(userName){
+
+         setToolUsers((toolUsers) => [...toolUsers,userName])
+         //The number should not subtract beyond zero  
+         setAvailNumber((availNumber) => availNumber>0 ? availNumber -1 : availNumber)
+       }
+      
     }
 
 
@@ -55,9 +64,7 @@ function ToolCard({name,image,totalNumber,availableNumber,id,tool,onDeleteTool})
 
 
     return(
-        <div className="container">
-            
-          <div className="tool-card">
+        <div className="tool-card">
 
             <h3 id="card">{name}</h3>
             <img className="tool-image" src={image}/>
@@ -68,12 +75,24 @@ function ToolCard({name,image,totalNumber,availableNumber,id,tool,onDeleteTool})
             <button onClick={handleClickAdd} className="status">TOOL RETURNED</button>
             <button onClick={handleClickMinus}className="status">TOOL TAKEN</button>
             <button onClick={handleDeleteToolClick} className="status" id="delete">DELETE TOOL</button>
+            
+     
+          <p id="toolUser-title" className="tools">List of tool users:</p>
+          <div id="userlist">
+            <ul>
+               {toolUsers.length > 0 ? (
+                  toolUsers.map((user, index) => <li key={index} className="tools">{user}</li>)
+                  ) : (
+                 <p className="tools" >No users have taken this tool.</p>
+                )}
+            </ul>
+          </div>
 
             <Link className="link" to={`/description/${id}`}>View More Details</Link>
 
          </div>
         
-        </div>
+      
     )
 }
 export default ToolCard

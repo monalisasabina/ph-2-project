@@ -6,7 +6,7 @@ h2#des-title{
 img#des-image{
     margin: auto;
     display: block;
-    height: 400px;
+    height: 300px;
     border: 1px solid;
     border-radius: 5px;
 }
@@ -18,4 +18,13 @@ p.para{
 h4{
     margin-left: 30px;
     font-size: 23px;
+}
+
+.des-para{
+    background-color: wheat;
+    bottom: 0;
+    border: solid;
+    margin-top: 20px;
+    border-radius: 10px;
+    
 }
