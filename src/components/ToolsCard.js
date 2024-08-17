@@ -44,7 +44,7 @@ function ToolCard({name,image,totalNumber,availableNumber,id,tool,onDeleteTool})
     function handleDeleteToolClick(){
      
      //delete warning and putting a password
-       if(window.confirm("Only the store manager can delete this tool?")){
+       if(window.confirm("Only the store manager can delete this tool")){
          const password=window.prompt("Please enter your password")
      
 

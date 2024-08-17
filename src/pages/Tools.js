@@ -55,7 +55,7 @@ function Tools(){
                 <label className='search' htmlFor="search">SEARCH: </label>
                 <input className="searchbar"
                        type="search"
-                       placeholder="Search for tool"
+                       placeholder="Search tool"
                        value={search}
                        onChange={(event) =>setSearch(event.target.value)}
                 

@@ -123,7 +123,7 @@ function Form({onAddTool}){
                <label  className="label-form">DESCRIPTION:</label>
                <textarea onChange={handleDescriptionChange} value={description}className="input-form" placeholder="Enter tools description"></textarea>
 
-               <button id="button-form" type="submit">SUBMIT</button>
+               <button id="button-form" type="submit">ADD TOOL</button>
 
             </form>
 

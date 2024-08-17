@@ -63,3 +63,7 @@ input.input-password{
     margin-top: 10px;
     border-radius: 15px;
 }
+
+#login-logo{
+    width: 250px;
+}
