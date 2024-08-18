@@ -11,7 +11,7 @@ function Tools(){
    const[search,setSearch]=useState('')
 
    useEffect(() =>{
-    fetch(`${process.env.REACT_APP_MY_TOOLS_API_URL}/tools`)
+    fetch(` http://localhost:3000/tools`)
     .then((res) =>res.json())
     .then((toolsData) =>{
                setTools(toolsData)

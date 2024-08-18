@@ -76,7 +76,7 @@ function Form({onAddTool}){
       }
       console.log(toolData);
 
-      fetch(`${process.env.REACT_APP_MY_TOOLS_API_URL}/tools`, {
+      fetch(` http://localhost:3000/tools`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

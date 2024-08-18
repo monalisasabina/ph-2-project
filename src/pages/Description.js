@@ -12,7 +12,7 @@ function Description(){
     const toolId = params.id;
 
  useEffect(() =>{
-   fetch(`${process.env.REACT_APP_MY_TOOLS_API_URL}/tools/${toolId}`)
+   fetch(` http://localhost:3000/tools/${toolId}`)
    .then(r => r.json())
    .then(data => setTool(data))
    .catch(error => console.error(error))

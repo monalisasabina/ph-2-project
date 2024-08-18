@@ -70,7 +70,7 @@ function ToolCard({name,image,totalNumber,availableNumber,id,tool,onDeleteTool})
      
 
        if(password==='password'){
-         fetch(`${process.env.REACT_APP_MY_TOOLS_API_URL}/tools/${id}`,{
+         fetch(` http://localhost:3000/tools/${id}`,{
             method:"DELETE",
           })
          .then((res) => res.json())
