@@ -26,6 +26,8 @@
 
    2. After logging in successfully, the user will be first be welcomed at the home page then proceed to click "tools" at the NavBar to access the tools page.
 
+   3. Incase the user enters the url with wrong path, an error page will appear. A "GO BACK BUTTON" will direct the user back home.
+
    3. At the tools page, the user should see all tools in the store listed at this page in form of a card. The card consists of;
 
        * The picture of the tool
