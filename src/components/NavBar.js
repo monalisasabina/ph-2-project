@@ -5,15 +5,15 @@ import "./NavBar.css";
 function NavBar({logout}) {
   return (
     <nav>
-      <NavLink to="/" className="nav-link"> <img src={logo} alt={"Panthera Africa"} className="nav-logo"/> </NavLink>
+      <NavLink to="/" > <img src={logo} alt={"Panthera Africa"} className="nav-logo"/> </NavLink>
 
       <NavLink to="/" className="nav-link">Home </NavLink>
 
       <NavLink to="/tools" className="nav-link">Tools </NavLink>
 
-      <NavLink to="/login" className="nav-link">Login</NavLink>
+      {/* <NavLink to="/login" className="nav-link">Login</NavLink> */}
 
-      <button onClick={logout}> logout</button>
+      <button id="logout-btn" onClick={logout}> LOGOUT</button>
     </nav>
   );
 };

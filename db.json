@@ -141,6 +141,28 @@
       "imageURL": "https://m.media-amazon.com/images/I/31lanaJmCFL.jpg",
       "availableNumber": "10",
       "totalNumber": "10"
+    },
+    {
+      "id": "bbe9",
+      "name": "Long nose pliers",
+      "brand": "Creston",
+      "model": "LNP306",
+      "price": "500",
+      "description": "The long nose pliers are a tool that is useful to electricians, engineers, artisans, and other field individuals in holding and cutting materials especially in areas where it’s difficult to do so with bare hands such as narrow ends. The tool’s unique feature of having a long nose makes it more usable and easy to handle.",
+      "imageURL": "https://www.crestonhardware.com/cdn/shop/products/283_29_LNP306_540x.png?v=1591254723",
+      "availableNumber": "13",
+      "totalNumber": "13"
+    },
+    {
+      "id": "0bcb",
+      "name": "Allen-key/ Hex key set",
+      "brand": "DISEN",
+      "model": "di1234",
+      "price": "2399",
+      "description": "Hex keys, commonly known as Allen keys/wrenches in the UK and various other countries, are a very simple hand tool of the general spanner and socket family, used for tightening and loosening hexagonal bolts and other compatible fasteners. Hex keys are most often encountered as a single piece of steel formed into a small L-shape",
+      "imageURL": "https://m.media-amazon.com/images/I/61M1DeN9vML._AC_SX679_.jpg",
+      "availableNumber": "5",
+      "totalNumber": "5"
     }
   ]
 }

@@ -21,7 +21,7 @@ function Tools(){
        
    },[])
 
-   // handle delete......................................................................
+   // handle delete.....................................................................
    function handleDeleteTool(deletedTool){
 
         const updatedTools=tools.filter((tool) =>tool.id !==deletedTool.id)
@@ -35,7 +35,7 @@ function Tools(){
   }
 
 
-   //search filter..............................................................  
+   //search filter.....................................................................  
    const filteredTools = tools.filter((tool) =>
       tool.name.toLowerCase().includes(search.toLowerCase())
     );

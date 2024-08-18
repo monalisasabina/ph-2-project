@@ -3,7 +3,8 @@ import "./ErrorPage.css"
 
 
 function ErrorPage(){
-
+ 
+  // Using navigate hook to direct back home on the error page
   const navigate=useNavigate()
 
   function handleGoHome(){

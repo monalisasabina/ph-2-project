@@ -6,6 +6,19 @@
 
 }
 
+.nav-link:hover{
+    background-color: bisque;
+    border-radius: 5px;
+    text-align: center;
+    
+
+  }
+  
+.nav-link:active{
+    color: cornflowerblue;
+  }
+
+
 .nav-logo{
     width:250px;
     margin-right: 780px;
@@ -16,5 +29,11 @@ nav{
     position: sticky;
     top: 0;
     background-color: white;
-  
+}
+
+#logout-btn{
+    height: 40px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: bisque;
 }

@@ -1,6 +1,6 @@
 img.tool-image{
-    height:200px;
-    width: 200px;
+    height:220px;
+    width: 260px;
     display: block;
     margin: auto;
 }
@@ -12,10 +12,14 @@ img.tool-image{
   box-sizing: border-box;
   background-color:azure;
   border-radius: 10px;
-  height: 620px;
+  height: 530px;
   margin-bottom: 20px;
   margin-left: 20px;
+}
 
+.tool-card:hover{
+  transform: scale(1.02);
+  box-shadow:  rgba(102, 51, 0, 0.5);
 }
 
 .tool-container{
@@ -33,7 +37,7 @@ img.tool-image{
 
 
 p.tools{
-  font-size: 18px;
+  font-size: 17px;
 }
 
 
@@ -47,25 +51,40 @@ h3#card{
 button.status{
   display:inline-flex;
   flex-direction: row;
+  font-size: 16px;
+  margin: 5px;
+  margin-left: 10px;
+  height: 30px;
+  font-size: 15px;
+  border-radius: 10px;
+  background-color: honeydew;
+}
+
+button#delete{
+  background-color:crimson ;
+  color: cornsilk;
 }
 
 .link{
   display: block;
   margin-top: 30px;
   margin-left: 10px;
+  text-align: center;
 }  
 
 /* Search................................................................... */
 .searchbar{
   width: 700px;
   height: 35px;
+  border-radius: 35px;
 }
 
 .search-form{
   margin-left: 50px;
   background-color: gainsboro;
-  padding: 5px;
+  padding: 10px;
   margin-bottom: 10px;
+  border-radius: 15px;
 }
 
 /* toolUser ......................................................................*/

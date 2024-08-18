@@ -19,8 +19,8 @@
    1. At the beginning of the shift, when the store clerk or manager open the link of this app at the browser, he/she should first see the "login" page. So the user should first login in.
 
      NOTE: For the purpose of the project
-        username:admin
-        password:password
+        username:storeadmin
+        password:tools
 
    2. After logging in successfully, the user will be first be welcomed at the home page then proceed to click "tools" at the NavBar to access the tools page.
 
@@ -34,11 +34,11 @@
 
        * The number of tools available.
 
-       * List of tool users and buttons;
+       * Explaining the buttons;
 
-          - The names of the tool users will appear here when the "TOOLS TAKEN" has been clicked. Actually the store employee will first be met with a prompt, asking him/her to enter the name of the tool user. After typing the name and presses ok, the tool user's name will be listed
+          - When the "TOOLS TAKEN" has been clicked. The store employee will first be met with a prompt, asking him/her to enter the name of the tool user. After typing the name and presses ok, the tool user's name will be listed at the "view tool user"
 
-          - When the tool is returned, the store employee will click the "TOOL RETURNED" and will then be promoted to type the name of the tool user who has returned the tool. The name will then be removed from the list.
+          - When the tool is returned, the store employee will click the "TOOL RETURNED" and will then be promoted to type the name of the tool user who has returned the tool. The name will then be removed from the list at the "view tool user".
 
 
        * 'DELETE' button: It is used delete the tool card. This is used in the case where may be the tool(s) are spoilt beyond repair and is disposed. Due to security concerns I have place a password prompt for the store manager (not a store clerk) to use it to delete the tool. A detailed report should be presented to the store manager as to why the tool was deleted. 
@@ -76,4 +76,4 @@
 
 3. Login page: https://clerk.com/blog/building-a-react-login-page-template
 
-3. Reading material on canvas
+4. Reading material on canvas

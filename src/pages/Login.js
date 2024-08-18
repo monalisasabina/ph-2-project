@@ -5,24 +5,29 @@ import logo from "./Screenshot from 2024-07-17 17-10-45.png"
 
 function Login(){
 
-  const login=useOutletContext()
   const[formData, setFormData]=useState({
     username:"",
     password:"",
   })
 
+  const login=useOutletContext()
+
+
+  // input onChange event handler
   function handleChange(event){
     setFormData({
       ...formData,
       [event.target.name]:event.target.value,
     })
   }
-     
+
+  //submitting the password form
   function handleLogin(event){
     event.preventDefault()
     
-    if(formData.username ==="admin" && formData.password ==="password"){
+    if(formData.username ==="storeadmin" && formData.password ==="tools"){
       login()
+
     }else{
       alert("Invalid username or password")
     }
@@ -46,6 +51,7 @@ function Login(){
                name="username"
                value={formData.username}
                onChange={handleChange}
+               placeholder="Enter Username"
         
             />
           
@@ -56,9 +62,10 @@ function Login(){
                name="password"
                value={formData.password}
                onChange={handleChange}
+               placeholder="Enter Password"
           />
           
-          <button type="submit">LOGIN</button>
+          <button className="password" type="submit">LOGIN</button>
         </form>
         </div>
         

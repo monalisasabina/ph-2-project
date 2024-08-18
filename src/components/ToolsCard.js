@@ -1,10 +1,31 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 
 function ToolCard({name,image,totalNumber,availableNumber,id,tool,onDeleteTool}){
 
-    const[availNumber,setAvailNumber]=useState(availableNumber)
-    const[toolUsers, setToolUsers]=useState([])
+    // const[availNumber,setAvailNumber]=useState(availableNumber)
+    // const[toolUsers, setToolUsers]=useState([])
+
+    //using local storage just to ensure I don't loose data when refreshing................................................. 
+    const[toolUsers,setToolUsers]= useState(() =>{
+
+      const savedUsers =localStorage.getItem(`toolUsers-${id}`)
+      return savedUsers? JSON.parse(savedUsers) :[]
+    })
+
+    const[availNumber,setAvailNumber]=useState(() =>{
+
+      const savedAvailNumber=localStorage.getItem(`availNumber-${id}`)
+      return savedAvailNumber !==null? JSON.parse(savedAvailNumber) : availableNumber
+      
+    })
+
+    useEffect(() =>{
+       localStorage.setItem(`toolUsers-${id}`,JSON.stringify(toolUsers))
+       localStorage.setItem(`availNumber-${id}`,JSON.stringify(availNumber))
+      
+    },[toolUsers,availNumber,id])
+    
 
 
     // Adding availableNumber.......................................................
@@ -18,8 +39,7 @@ function ToolCard({name,image,totalNumber,availableNumber,id,tool,onDeleteTool})
           setToolUsers((toolUsers)=> toolUsers.filter((toolUser) => toolUser !== userName))
 
           // The number should not go beyond total number
-          setAvailNumber((availNumber) => availNumber<totalNumber ? availNumber + 1 : availNumber)}
-         
+          setAvailNumber((availNumber) => availNumber<totalNumber ? availNumber + 1 : availNumber)} 
     }
 
     
@@ -33,6 +53,7 @@ function ToolCard({name,image,totalNumber,availableNumber,id,tool,onDeleteTool})
        if(userName){
 
          setToolUsers((toolUsers) => [...toolUsers,userName])
+         
          //The number should not subtract beyond zero  
          setAvailNumber((availNumber) => availNumber>0 ? availNumber -1 : availNumber)
        }
@@ -43,7 +64,7 @@ function ToolCard({name,image,totalNumber,availableNumber,id,tool,onDeleteTool})
     // Deleting tool................................................................
     function handleDeleteToolClick(){
      
-     //delete warning and putting a password
+       //delete warning and putting a password
        if(window.confirm("Only the store manager can delete this tool")){
          const password=window.prompt("Please enter your password")
      
@@ -76,19 +97,9 @@ function ToolCard({name,image,totalNumber,availableNumber,id,tool,onDeleteTool})
             <button onClick={handleClickMinus}className="status">TOOL TAKEN</button>
             <button onClick={handleDeleteToolClick} className="status" id="delete">DELETE TOOL</button>
             
-     
-          <p id="toolUser-title" className="tools">List of tool users:</p>
-          <div id="userlist">
-            <ul>
-               {toolUsers.length > 0 ? (
-                  toolUsers.map((user, index) => <li key={index} className="tools">{user}</li>)
-                  ) : (
-                 <p className="tools" >No users have taken this tool.</p>
-                )}
-            </ul>
-          </div>
-
             <Link className="link" to={`/description/${id}`}>View More Details</Link>
+
+            <Link className="link" to={`/tool-user/${id}`} state={{toolUsers, toolName:name}}>View Tool Users</Link>
 
          </div>
         

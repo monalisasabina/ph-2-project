@@ -35,9 +35,13 @@ p#warning{
 
 /* login page......................................................................... */
 
-button{
-    margin-left: 10px;
+button.password{
+    margin-left: 0px;
     margin-top: 10px;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: bisque;
 }
 
 label{
@@ -53,17 +57,19 @@ img#login{
 
 #password{
     text-align: center;
-    margin: 100px auto;
+    margin: 70px auto;
     width: 300px; 
 }
 
 input.input-password{
     height: 30px;
-    width: 200px;
+    width: 230px;
     margin-top: 10px;
     border-radius: 15px;
+    background-color: lightcyan;
 }
 
 #login-logo{
     width: 250px;
 }
+
