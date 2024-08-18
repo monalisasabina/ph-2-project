@@ -8,6 +8,7 @@
 
 ## HOW TO OPEN THE APP
   To open this application you must use web browser(e.g Google Chrome) and then use this link to access the application:
+  https://meek-crostata-30d4f2.netlify.app/
 
      
 
