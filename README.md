@@ -8,6 +8,7 @@
 
 ## HOW TO OPEN THE APP
   To open this application you must use web browser(e.g Google Chrome) and then use this link to access the application:
+
   https://meek-crostata-30d4f2.netlify.app/
 
      
@@ -37,18 +38,20 @@
 
        * Explaining the buttons;
 
-          - When the "TOOLS TAKEN" has been clicked. The store employee will first be met with a prompt, asking him/her to enter the name of the tool user. After typing the name and presses ok, the tool user's name will be listed at the "view tool user"
+          - When the "TOOLS TAKEN" has been clicked. The store employee will first be met with a prompt, asking him/her to enter the name of the tool user. After typing the name and presses ok, the tool user's name will be listed at the "view tool user". The user will then click "Viee Tool User" to view the list
 
           - When the tool is returned, the store employee will click the "TOOL RETURNED" and will then be promoted to type the name of the tool user who has returned the tool. The name will then be removed from the list at the "view tool user".
 
 
-       * 'DELETE' button: It is used delete the tool card. This is used in the case where may be the tool(s) are spoilt beyond repair and is disposed. Due to security concerns I have place a password prompt for the store manager (not a store clerk) to use it to delete the tool. A detailed report should be presented to the store manager as to why the tool was deleted. 
+          - 'DELETE' button: It is used delete the tool card. This is used in the case where may be the tool(s) are spoilt beyond repair and is disposed. Due to security concerns I have place a password prompt for the store manager (not a store clerk) to use it to delete the tool. A detailed report should be presented to the store manager as to why the tool was deleted. 
         
-        When clicked, the user will first be met with an alert saying "Only the store manager can delete this tool". So here the store manager should press ok. Afterwards an enter password prompt will appear, if the password is successful the the tool will be deleted.
+          When clicked, the user will first be met with an alert saying "Only the store manager can delete this tool". So here the store manager should press ok. Afterwards an enter password prompt will appear, if the password is successful the the tool will be deleted.
 
-       NOTE: The password is 'password', for the project purpose.
+          NOTE: The password is 'password', for the project purpose.
 
        * "View more details": When clicked, more information about that specific tool os displayed. The user should be able to see the tool name, tool picture, a simple description of what the tool does, tool brand, tool model, tool price and the total number of that tool in the store, Basically just acts like a "tool record"
+
+
 
 
    4. Use the form to add a new tool or tools that have been bought.
@@ -66,8 +69,6 @@
        * The total number of that new tool being brought at the store should be entered at the 'NUMBER OF TOOLS' input.
 
        * Once all inputs of the tool are filled, the user should CLICK the 'ADD TOOL' button to submit. Once submitted a new card of the tool is displayed.
-
-
 
 
 ## REFERENCES
