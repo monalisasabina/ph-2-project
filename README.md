@@ -1,4 +1,4 @@
-# PHASE-2 PROJECT: THE TOOLS STOCKTAKING APPlICATION
+# PHASE-2 PROJECT: THE TOOLS STOCKTAKING APPLICATION
 
 ## INTRODUCTION
   The tools stocktaking application is used to check the number of tools that are in an engineering store.
